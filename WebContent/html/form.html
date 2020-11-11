@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form태그는 클라이언트에서 사용자가 작성한 정보를, 서버로 전송하기 위해 사용하는 기초태그 -->
+	<!-- required속성은 태그의 필수값을 지정하는 옵션 -->
+	<form>
+		<h3>회원가입 양식</h3>
+		<hr/>
+		아이디: <input type="text" name="변수명" placeholder="아이디를 입력하세요" required ><br/>
+		비밀번호: <input type="password" name="비밀번호" ><br/>
+		이메일: <input type="email" name="이메일"><br/>
+		
+		<!-- radio는 name으로 통일시켜야, 여러개의 버튼을 한나의 그룹으로 보고 다중선택이 가능합니다. -->
+		전공:
+		<input type="radio" name="major">경영학
+		<input type="radio" name="major">컴퓨터
+		<input type="radio" name="major">전기전자
+		<input type="radio" name="major">기계공학
+		
+		<br/>
+		관심분야:
+		<input type="checkbox" name="inter" >자바
+		<input type="checkbox" name="inter" >DB
+		<input type="checkbox" name="inter" >JSP
+		<input type="checkbox" name="inter" >JavaScript
+		
+		<br/>
+		통신사:
+		<select name="phone1">
+			<option>SKT</option>
+			<option>KT</option>
+			<option>LGU+</option>
+		</select>
+		
+		<br/>
+		자기소개:
+		<textarea rows="5" cols="30" name="글"></textarea>
+		
+		<br/>
+		<!-- subit은 폼안에 있는 데이터를 서버로 전송 -->
+		<input type="submit" value="가입하기" >
+		<input type="button" value="그냥버튼" >
+		
+	</form>
+	
+	
+
+</body>
+</html>
